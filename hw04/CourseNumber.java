@@ -33,7 +33,7 @@ public class CourseNumber{
                         else if(num1*10+num2*10==40)//If input ends in 40
                             System.out.println("The course was offered in the Fall semester of "+(course/100)); //Print out semester and year
                         else{//Not a real semester
-                            System.out.println(num1*10+num2+" is not enter a legitimate semester");
+                            System.out.println(num1*10+num2+" is not a legitimate semester");
                             return;
                         }
                 }
