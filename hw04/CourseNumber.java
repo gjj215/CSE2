@@ -4,7 +4,7 @@
 //CourseNumber
 //September 22, 2014
 //
-// A program that reads th input course number and prints out when the course is available.
+// A program that reads the input course number and prints out when the course is available.
 
 import java.util.Scanner; //Import Scanner class before writing anything in the program
 
