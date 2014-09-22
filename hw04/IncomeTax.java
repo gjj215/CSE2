@@ -20,16 +20,6 @@ public class IncomeTax{
         if(myScanner.hasNextInt()){ //Check if user inputed an int
             income = myScanner.nextInt(); //Accept user input if an int
                 if(income >=0){ //Check if int is positive
-                
-                    /*double tax;
-                    int dollars, dimes, pennies; //for storing digits to the right of the decimal point
-                    tax = income*1000*(1+taxRate); //get the whole cost, dropping the decimal fraction
-                    dollars=(int)tax;
-                    dimes=(int)(tax*10)%10; //get dimes amount , e.g., (int)(6.73*10)%10 -> 67%10 -> 7
-                                 //where the % (mod) operator returns the remainder
-                    pennies=(int)(tax*100)%10; //after the division: 583%100 -> 83, 27%5 -> 2*/
-                
-                
                     if(income<20){ //For income less than 20000
                         System.out.println("The tax rate on $"+income*1000+" is 5.0%, and the tax is $"+(int)(income*1000*.05*100)/100);
                     }//Make income an integer and multiply and divid by 100 to not have a messy output
