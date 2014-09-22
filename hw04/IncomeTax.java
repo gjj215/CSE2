@@ -4,9 +4,7 @@
 //IncomeTax
 //September 21, 2014
 //
-// A program that computes the cost of buying Big Macs with user inputs.
-// Asks if user wants to add fries. Adds error message elements.
-// Program uses selection statments to run codes conditionally.
+// A program that computes the amount of tax for a given income.
 
 import java.util.Scanner; //Import Scanner class before writing anything in the program
 
