@@ -33,19 +33,15 @@ public class IncomeTax{
                 
                 
                     if(income<20){ //For income less than 20000
-                        System.out.println("5%");
                         System.out.println("The tax rate on $"+income*1000+" is 5.0%, and the tax is $"+(int)(income*1000*.05*100)/100);
                     }//Make income an integer and multiply and divid by 100 to not have a messy output
                     else if(income>=20 && income<40){ //For income between 20k and 40k
-                        System.out.println("7%");
                         System.out.println("The tax rate on $"+income*1000+" is 7.0%, and the tax is $"+(int)(income*1000*.07*100)/100);
                     }
                     else if(income>=40 && income<78){ //For income between 40k and 78k
-                        System.out.println("12%");
                         System.out.println("The tax rate on $"+income*1000+" is 12.0%, and the tax is $"+(int)(income*1000*.12*100)/100);
                     }
                     else{ //For incomes more than 78k
-                        System.out.println("14%");
                         System.out.println("The tax rate on $"+income*1000+" is 14.0%, and the tax is $"+(int)(income*1000*.14*100)/100);
                     }
                         
