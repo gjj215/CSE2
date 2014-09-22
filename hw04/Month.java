@@ -1,7 +1,7 @@
 //////////////////////////////////////////
 //Greg Jacobs
 //Homework 4, part 2 - CSE 002
-//IncomeTax
+//Month
 //September 22, 2014
 //
 // A program that displays the number of days for a inputed month.
