@@ -51,7 +51,9 @@ public class BigMacAgain{
             
                 //Now ask if they want fries with their order
                 System.out.println("Do you want an order of fries (Y/y/N/n)?");
-                String response = myScanner.next(); //Have scanner read the input string up to the first space or return key input
+                Scanner myScanner2; //Declare a new instance of the scanner to get a new input
+                myScanner2 = new Scanner(System.in);
+                String response = myScanner2.next(); //Have scanner read the input string up to the first space or return key input
                     if(response=="Y"||response=="y"){ //Check if input was yes (|| is the "or" function)
                         System.out.println("You ordered fries at a cost of $"+costFries);//Print out fries cost
                         System.out.println("The total cost of the meal is $"+dollars2+'.'+dimes2+pennies2);//Print out total cost of meal
