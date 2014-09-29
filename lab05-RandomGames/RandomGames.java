@@ -19,6 +19,9 @@ public class RandomGames{
         String gametype; //A place to store the name of each game.
         
         Random rand = new Random(); //Declare the method for the random class
+        
+        int inputLength = letter.length();// item.length() measures the string length of item input
+        if (inputLength == 1){//Check if input string is length 1
         switch(letter){ //Switch is a statement with have multiple execution paths,
                         //use this over if/else statments if there a a number of paths to take.
             //Cases are listed, if "letter" is the char after a case,
@@ -70,6 +73,9 @@ public class RandomGames{
             default://Default is the case that deals with anything not covered in previous cases
                     System.out.println("'"+letter+"' is not one of 'R', 'r', 'C', 'c', 'P', 'p'");//Print out nop
                 break;//Break default case
-        }
-    }
-}
+        }//Close switch
+        }//Close if single statement
+        else//Go here if more than one character was in input string
+            System.out.println("A single character expected");//Print out error message
+    }//Close method
+}//Close class

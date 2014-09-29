@@ -97,6 +97,6 @@ public class BurgerKing{
         }//Close switch
         }//Close if single statement
         else//Go here if more than one character was in input string
-        System.out.println("A single character expected");//Print out error message
+            System.out.println("A single character expected");//Print out error message
     }//Close method
 }//Close class
