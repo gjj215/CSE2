@@ -8,7 +8,6 @@
 //Prints out receipt.
 
 import java.util.Scanner; //Import Scanner class before writing anything in the program
-import java.util.Random; //Import random int generator class
 
 public class BurgerKing{
     public static void main(String[] args){
