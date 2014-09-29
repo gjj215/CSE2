@@ -20,6 +20,9 @@ public class BurgerKing{
         System.out.println("Soda (S or s)");
         System.out.print("Fries (F or f)");//Use print to keep cursor on the line
         String item = myScanner.next(); //Have scanner read the input string up to the first space or return key input
+        
+        int inputLength = item.length();// item.length() measures the string length of item input
+        if (inputLength == 1){//Check if input string is length 1
         switch(item){ //Switch is a statement with have multiple execution paths,
                         //use this over if/else statments if there a a number of paths to take.
             //Cases are listed, if "letter" is the char after a case,
@@ -92,5 +95,8 @@ public class BurgerKing{
                 System.out.println("You did not enter a 'B', 'b', 'S', 's', 'F', or 'f'");//Print out error statement
             break;//Break default case
         }//Close switch
+        }//Close if single statement
+        else//Go here if more than one character was in input string
+        System.out.println("A single character expected");//Print out error message
     }//Close method
 }//Close class
