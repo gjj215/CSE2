@@ -24,52 +24,52 @@ public class RandomGames{
             //Cases are listed, if "letter" is the char after a case,
             //switch will send the program to that particular case
             case "R"://Can link cases together, in this cae, both R and r will trigger the same program area
-            case "r":
+            case "r"://Case for Roulette
                 gametype = "Roulette";//Set String gametype to "Roulette"
                 int Roulette=(int)(Math.random()*38)+0; //Math.random()*max)+min generates a random "int" in this case, between 38 and 0
                     if (Roulette == 38){ //Use the 38th digit as 00
-                        Roulette = (int)00;//Convert to 00
-                    }
+                        Roulette = (int)00;//Convert 38 to 00
+                    }//Don't need an else statement
                 System.out.println(gametype+": "+Roulette); //Print out "Roulette: " and the random int
                 break;//Break stops reading case(s) and goes to the next one
-            case "C":
-            case "c":
+            case "C"://Can link the cases together
+            case "c"://Case for craps
                 gametype = "Craps";//Set String gametype to "Craps"
                 int die1=(int)(Math.random()*6)+1;//A random die roll between 6 and 1
                 int die2=(int)(Math.random()*6)+1;//Another random die roll between 6 and 1
                 int sum = die1 + die2;//The sum of the 2 die rolls
-                System.out.println(gametype+": "+die1+" + "+die2+" = "+sum);
-                break;
-            case "P":
+                System.out.println(gametype+": "+die1+" + "+die2+" = "+sum);//Print out the dice rolls and their sum
+                break;//Break case C and case c
+            case "P"://Case for pick a random card
             case "p":
                 int card=(int)(Math.random()*14)+2;//13 cards in a suit
-                String cardName;
-                    if (card == 14)
+                String cardName;//Create string to change royal cards to their names
+                    if (card == 14)//14 for Ace
                         cardName = "Ace";
-                    else if (card == 13)
+                    else if (card == 13)//13 for King
                         cardName = "King";
-                    else if (card == 12)
+                    else if (card == 12)//12 for Queen
                         cardName = "Queen";
-                    else if (card == 11)
+                    else if (card == 11)//11 for Jack
                         cardName = "Jack";
-                    else
+                    else//For numbers 2-10
                         cardName = Integer.toString(card);//Don't rename numbers 2-10,
                         //use Integer.toString() to save "card" to "carName" as a String
                 int suit=(int)(Math.random()*4)+1;//Random pick of 1 of the 4 suits in a deck
                 String suitName;//Convert the random int to a name of a suit
-                    if (suit == 1)
+                    if (suit == 1)//1 = clubs
                         suitName = "clubs";
-                    else if (suit == 2)
+                    else if (suit == 2)//2 = spades
                         suitName = "spades";
-                    else if (suit == 3)
+                    else if (suit == 3)//3 = diamonds
                         suitName = "diamonds";
-                    else
+                    else//4 = hearts
                         suitName = "hearts";
                 System.out.println(cardName+" of "+suitName); //Print out card name and suit name
-                break;
-            default:
+                break;//Break case P and p
+            default://Default is the case that deals with anything not covered in previous cases
                     System.out.println("'"+letter+"' is not one of 'R', 'r', 'C', 'c', 'P', 'p'");//Print out nop
-                break;
+                break;//Break default case
         }
     }
 }
