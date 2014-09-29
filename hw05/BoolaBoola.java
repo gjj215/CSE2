@@ -7,42 +7,6 @@
 // Prints out a random express of cominations of trues and falses and askes the user
 //if the answer is true or false
 
-
-
-/*
-PLAN:To make true values = 1 and false values = -1. Then create the 4 scenarios of or/ands and use whether
-the answer is negative or not to determine the correct answer. Store the correct answer in the String "correctAnswer"
-and then compare it to the user answer. If user answer = correctAnswer, then print output of 'correct'.
-
-What I need to do next: Find a way to have the random variable be -1 or 1, nothing in between.
-
-
-Case 1: if (True and false || false and true || false and false)
-            beginning = F
-        else if (True and true)
-            beginning = T
-        
-case 2: if (True or true || true or false || false or true)
-            beginning = T
-        else if(false or false)
-            beginning = F
-
-case 3: if (operator2 = &&)
-            if(beginning = F)
-                correctAnswer = F
-            else if (beginning = T, TF3 = False)
-                correctAnswer = F
-            else if (beginning = T, TF3 = True)
-                correctAnswer = T
-        else//operator2 = or
-            if(beginning = T)
-                correctAnswer = T
-            else if (beginning = F, TF3 = F)
-                correctAnswer = F
-            else if (beginning = F, TF3 = T)
-                correctAnswer = T
-*/
-
 import java.util.Scanner; //Import Scanner class before writing anything in the program
 import java.util.Random; //Import random int generator class
 
