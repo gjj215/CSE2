@@ -1,3 +1,14 @@
+///////////////////////////////
+//Greg Jacobs
+//LAB 06 - CSE 2
+//Engima1
+//October 12, 2014
+//
+// A fix to the given program on coursesite.
+
+//Buggy program:
+
+
 import java.util.Scanner;
 public class Enigma2{
   public static void main(String [] arg){
