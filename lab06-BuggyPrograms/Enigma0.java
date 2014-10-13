@@ -60,14 +60,14 @@ import java.util.Scanner;
 public class Enigma0{
   public static void main(String arg []){
     System.out.print("Enter an int- ");
-    Scanner scan=new Scanner(System.in);
-    if(scan.hasNextInt()){
-      int n=scan.nextInt();
+    Scanner scan=new Scanner(System.in);//Declare instance of the scanner class
+    if(scan.hasNextInt()){//Check if the user entered an int
+      int n=scan.nextInt();//Declare n as the unser input
       System.out.println("You entered "+n);
       System.out.println("sum is 25");
       System.out.println("To repeat, you entered "+n);
     }
-    else{
+    else{//If user did not enter an int
       System.out.println("You entered 4");
       System.out.println("sum is 25");
       System.out.println("To repeat, you entered 4");
