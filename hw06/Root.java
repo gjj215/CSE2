@@ -12,35 +12,35 @@ public class Root{
     public static void main(String[] args){
         Scanner myScanner; //Declare an instance of the Scanner object in order to accept input
         myScanner = new Scanner(System.in); //Call the Scanner constructor, which tells Scanner that I am creating an instance that will take input from STDIN
-        System.out.println("Enter a double greater than 0: ");
-        double x;
-        double difference = 99999;
-        if(myScanner.hasNextInt()){
-            x = myScanner.nextInt();
-            double low = 0;
-            double high = 1+x;
+        System.out.println("Enter a double greater than 0: ");//Ask the user to enter a double
+        double x;// A place to store the user input
+        double difference = 99999;//Initialize the difference as a high number to start the while loop 
+        if(myScanner.hasNextDouble()){//Check if user entered a double
+            x = myScanner.nextDouble();//Place input in double x
+            if(x>0){
+            double low = 0;//Initialize low
+            double high = 1+x;//Initialize high
             double middle = (low+high)/2;
-            while(difference>(.0000001*(1+x))){
-                if((middle*middle)>x){
-                    high = middle;
-                    difference = low - middle;
-                    System.out.println("middle= "+middle);
-                    System.out.println("low= "+low);
-                    System.out.println("high= "+high);
+            while(difference>(.0000001*(1+x))){//Keep repeating steps as long as the difference is bigger than .0000001 error
+                if((middle*middle)>x){//If middle squared is greater than x
+                    high = middle;//Set high to middle
+                    difference = low - middle;//Record the difference
                 }
-                else{
-                    low = middle;
-                    difference = high - middle;
-                    System.out.println("middle= "+middle);
-                    System.out.println("low= "+low);
-                    System.out.println("high= "+high);
+                else{//If middle squared is not greater than x
+                    low = middle;//Set low to middle
+                    difference = high - middle;//Record the difference
                 }
             }//End of while
-            System.out.println("The square root of "+x+" is "+middle);
+            System.out.println("The square root of "+x+" is "+middle);//Print out square root
+            }//End of positive if
+            else{//User did not enter a positive double
+                System.out.println("You did not enter a positive double.");
+                return;//Exit program
+            }
         }//End of check int if
-        else{
-            System.out.println("You did not enter a positive double.");
-            return;
+        else{//If user did not enter a double
+            System.out.println("You did not enter a double.");
+            return;//Exit program
         }
     }//End of main method
 }//End of class
