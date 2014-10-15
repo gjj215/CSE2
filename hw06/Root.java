@@ -24,12 +24,13 @@ public class Root{
             while(difference>(.0000001*(1+x))){//Keep repeating steps as long as the difference is bigger than .0000001 error
                 if((middle*middle)>x){//If middle squared is greater than x
                     high = middle;//Set high to middle
-                    difference = low - middle;//Record the difference
+                    difference = high - low;//Record the difference
                 }
                 else{//If middle squared is not greater than x
                     low = middle;//Set low to middle
-                    difference = high - middle;//Record the difference
+                    difference = high - low;//Record the difference
                 }
+                middle = (low+high)/2;//Reset middle for each loop
             }//End of while
             System.out.println("The square root of "+x+" is "+middle);//Print out square root
             }//End of positive if
