@@ -12,14 +12,13 @@ import java.util.Scanner; //Import Scanner class before writing anything in the 
 public class Arrays{
     public static void main(String[] args){
         int [] myArray = new int[10];//Create an array that holds 10 ints
-        System.out.println("Enter 10 ints: ");//Ask user to enter an int
+        System.out.print("Enter 10 ints: ");//Ask user to enter an int
         Scanner myScanner; //Declare an instance of the Scanner object in order to accept input
-        int input;//Variable to hold user input
-        for(int i=0; i<myArray.length; i++){
-            myScanner = new Scanner(System.in); //Call the Scanner constructor
-            input = myScanner.nextInt();//Store int in the name "input"
-            myArray[i]=input;
-        }
+        myScanner = new Scanner(System.in); //Call the Scanner constructor, which tells Scanner that I am creating an instance that will take input from STDIN
+        String input = "";//Variable to hold user input
+        for(int j=0; j<10; j++){
+                myArray[j]=myScanner.nextInt();
+            }
         
         //Find highest and lowest values
         int max = 0;//Set the max variable as 0
