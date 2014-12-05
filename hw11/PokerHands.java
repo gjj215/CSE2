@@ -129,21 +129,28 @@ public class PokerHands{
             }
         }
         System.out.println("Count: "+count[0]+" "+count[1]+" "+count[2]+" "+count[3]+" "+count[4]);
-    /*  switch(count){
-            case {8,5,0,0,0}://High card or straight
-                System.out.println("This is a High Card"); break;
-            case {9,3,1,0,0}://One pair
-                System.out.println("This is a One Pair"); break;
-            case {10,1,2,0,0}://Two pair
-                System.out.println("This is a Two Pair"); break;
-            case {12,0,0,1,0}://3 of a kind
-                System.out.println("This is a 3 Of A Kind"); break;
-            case {11,0,1,1,0}://Full house
-                System.out.println("This is a Full House"); break;
-            case {12,0,0,0,1}://4 of a kind
-                 System.out.println("This is a 4 Of A Kind"); break;
-        }*/
-        if(count[4] == 1){
+        
+        int hand0 [] = {8,5,0,0,0};
+        int hand1 [] = {9,3,1,0,0};
+        int hand2 [] = {10,1,2,0,0};
+        int hand3 [] = {12,0,0,1,0};
+        int hand4 [] = {11,0,1,1,0};
+        int hand5 [] = {12,0,0,0,1};
+        
+        if(count == hand0)
+            System.out.println("This is a High Card");
+        if(count == hand1)
+            System.out.println("This is a One Pair");
+        if(count == hand2)
+            System.out.println("This is a Two Pair");
+        if(count == hand3)
+            System.out.println("This is a 3 Of A Kind");
+        if(count == hand4)
+            System.out.println("This is a Full House");
+        if(count == hand5)
+            System.out.println("This is a 4 Of A Kind");
+        
+        /*if(count[4] == 1){
             System.out.println("This is a 4 Of A Kind");
         }
         else if(count[3]== 1){
@@ -159,6 +166,6 @@ public class PokerHands{
         }
         else{
             System.out.println("This is a High Card");
-        }
+        }*/
     }
 }
