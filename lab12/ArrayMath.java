@@ -58,17 +58,26 @@ public class ArrayMath{
     }
     
     public static double[] addArrays(double [] x, double [] y){
-        double sumArray[]={};
+        double sumArray[];
         if(x.length>=y.length){//If x length is greater or equal to y length, then use x length in for loop
-            for(int i=0; i<x.length; i++){
-            sumArray[i]=x[i]+y[i];
-            }
-        }
-        else{//If y length is greater than x length, use y length in for loop
+            sumArray = new double [x.length];
             for(int i=0; i<y.length; i++){
-            sumArray[i]=x[i]+y[i];
+                sumArray[i]=x[i]+y[i];
+            }
+            for(int j=y.length; j<x.length; j++){
+                sumArray[j]=x[j];
             }
         }
+        else{
+            sumArray = new double [y.length];
+            for(int i=0; i<x.length; i++){
+                sumArray[i]=x[i]+y[i];
+            }
+            for(int j=x.length; j<y.length; j++){
+                sumArray[j]=y[j];
+            }
+        }
+        
         return sumArray;
     }
 }
