@@ -8,7 +8,6 @@
 // In this homework, we use arrays and methods to generate random poker hands and determine the pairs.
 //
 
-import java.util.Random;
 import java.util.Scanner;
 public class PokerHands{
     public static void main(String [] arg){
@@ -128,7 +127,7 @@ public class PokerHands{
                 case 4: count[4] +=1; break;//Count the 4s in freq[]
             }
         }
-        System.out.println("Count: "+count[0]+" "+count[1]+" "+count[2]+" "+count[3]+" "+count[4]);
+        //System.out.println("Count: "+count[0]+" "+count[1]+" "+count[2]+" "+count[3]+" "+count[4]);
         
         int hand0 [] = {8,5,0,0,0};
         int hand1 [] = {9,3,1,0,0};
